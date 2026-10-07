@@ -9,7 +9,7 @@ namespace EncapsulationHomework5
         public int LegsCount { get; set; } = 2;
 
         public Human(string name, double speed, int intelligence)
-       : base(name, speed, intelligence)
+        :base(name, speed, intelligence)
         {
         }
 

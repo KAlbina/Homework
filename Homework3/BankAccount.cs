@@ -6,45 +6,21 @@ namespace Homework3
 {
     internal class BankAccount
     {
-        private string _owner;
-        private string _accountNumber;
-        private decimal _balance;
-        public string Owner
-        {
-            get
-            {
-                return _owner;
-            }
-        }
-        public string AccountNumber
-        {
-            get
-            {
-                return _accountNumber;
-            }
-            init
-            {
-                _accountNumber = value;
-            }
-        }
-        public decimal Balance
-        {
-            get
-            {
-                return _balance;
-            }
-            private set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Баланс счета отрицательный");
-                }
-                _balance = value;
-            }
-        }
+       
+        public string Owner { get; }
+   
+        public string AccountNumber { get; init; }
+   
+        public decimal Balance { get; private set; }
         public BankAccount(string owner, decimal balance)
         {
-            _owner = owner;
+            Owner = owner;
+
+            if (balance < 0)
+            {
+                throw new ArgumentException("Баланс счета отрицательный");
+            }
+
             Balance = balance;
         }
         public void Deposit(decimal amount)
@@ -53,6 +29,7 @@ namespace Homework3
             {
                 throw new ArgumentException("Сумма пополнения должна быть больше нуля");
             }
+
             Balance += amount;
         }
         public void Withdraw(decimal amount)
