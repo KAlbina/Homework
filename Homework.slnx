@@ -1,9 +1,11 @@
 <Solution>
+  <Project Path="ChainofResponsibility/ChainofResponsibility.csproj" Id="978cdbc4-4913-4a5e-b33e-eaffeea75fcb" />
   <Project Path="EncapsulationHomework5/EncapsulationHomework5.csproj" Id="096a0405-4759-4675-98bc-e0504887dc90" />
   <Project Path="Homework1/Homework1.csproj" />
   <Project Path="Homework2/Homework2.csproj" Id="20647010-f11e-410c-90ef-ed74c2ce164c" />
   <Project Path="Homework3/Homework3.csproj" Id="61b5d48a-e840-4a0e-bc0c-4bd4156822cc" />
   <Project Path="Homework4/Homework4.csproj" Id="dd9f2c20-ca49-48c8-819e-c3dffd27c0b3" />
+  <Project Path="Iterator/Iterator.csproj" Id="3e64faa1-d155-4c9f-91ef-c647aa16c1f1" />
   <Project Path="PolimorfismHomework7/PolimorfismHomework7.csproj" Id="fd606757-0a61-4c05-829f-425896cb43c4" />
   <Project Path="RegularExpressionsHomework5/RegularExpressionsHomework5.csproj" Id="5afda85e-889d-46b2-adc4-c6d901abc5fa" />
 </Solution>
